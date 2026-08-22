@@ -1,0 +1,412 @@
+# ============================================================
+# ETE FINAL-YEAR PROJECT GENERAL .gitignore
+# ============================================================
+
+# ------------------------------------------------------------
+# Operating system files
+# ------------------------------------------------------------
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+Desktop.ini
+
+# ------------------------------------------------------------
+# Editor and IDE temporary files
+# ------------------------------------------------------------
+.idea/
+*.iml
+
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.example.json
+
+*.swp
+*.swo
+*.swn
+*~
+*.tmp
+*.temp
+*.log
+*.cache
+*.bak
+*.old
+*.orig
+*.rej
+*.autosave
+
+# ------------------------------------------------------------
+# Secrets and local configuration
+# ------------------------------------------------------------
+.env
+.env.*
+!.env.example
+!.env.template
+
+secrets.*
+credentials.*
+config.local.*
+local.settings.*
+
+*.pem
+*.key
+*.p12
+*.pfx
+*.jks
+*.keystore
+
+# ------------------------------------------------------------
+# Compressed archives and backups
+# ------------------------------------------------------------
+*.zip
+*.rar
+*.7z
+*.tar
+*.tar.gz
+*.tgz
+*.gz
+*.bz2
+*.xz
+
+# ------------------------------------------------------------
+# General build and generated output folders
+# ------------------------------------------------------------
+build/
+dist/
+out/
+output/
+bin/
+obj/
+Debug/
+Release/
+coverage/
+logs/
+temp/
+tmp/
+
+# ============================================================
+# PYTHON
+# ============================================================
+
+__pycache__/
+*.py[cod]
+*$py.class
+
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.pyre/
+.pytype/
+.hypothesis/
+.tox/
+.nox/
+
+.coverage
+.coverage.*
+htmlcov/
+
+.venv/
+venv/
+env/
+ENV/
+
+pip-wheel-metadata/
+*.egg
+*.egg-info/
+.eggs/
+
+.ipynb_checkpoints/
+
+# Python source and configuration files remain tracked:
+!*.py
+!requirements.txt
+!pyproject.toml
+!Pipfile
+!Pipfile.lock
+
+# ============================================================
+# NODE.JS, JAVASCRIPT, TYPESCRIPT AND REACT
+# ============================================================
+
+node_modules/
+
+.npm/
+.npm-cache/
+.yarn/cache/
+.yarn/unplugged/
+.pnpm-store/
+
+.next/
+.nuxt/
+.svelte-kit/
+.parcel-cache/
+.vite/
+.cache/
+
+.eslintcache
+*.tsbuildinfo
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Keep dependency lock files:
+!package.json
+!package-lock.json
+!yarn.lock
+!pnpm-lock.yaml
+
+# Keep JavaScript and TypeScript source:
+!*.js
+!*.jsx
+!*.ts
+!*.tsx
+!*.css
+!*.scss
+!*.html
+
+# ============================================================
+# FLUTTER AND DART
+# ============================================================
+
+.dart_tool/
+.pub-cache/
+.pub/
+.packages
+
+.flutter-plugins
+.flutter-plugins-dependencies
+
+ios/Pods/
+ios/.symlinks/
+macos/Pods/
+macos/.symlinks/
+
+android/.gradle/
+android/local.properties
+android/key.properties
+
+# Keep Flutter project files:
+!pubspec.yaml
+!pubspec.lock
+!analysis_options.yaml
+!*.dart
+
+# ============================================================
+# JAVA, KOTLIN, GRADLE AND ANDROID
+# ============================================================
+
+.gradle/
+.gradle-cache/
+*.class
+*.jar
+*.war
+*.ear
+
+target/
+
+captures/
+.externalNativeBuild/
+.cxx/
+
+# Keep source and Gradle configuration:
+!*.java
+!*.kt
+!*.kts
+!build.gradle
+!build.gradle.kts
+!settings.gradle
+!settings.gradle.kts
+!gradle.properties
+
+# ============================================================
+# C, C++, CMAKE AND EMBEDDED SYSTEMS
+# ============================================================
+
+*.o
+*.obj
+*.a
+*.so
+*.dll
+*.dylib
+*.exe
+
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+compile_commands.json
+
+# PlatformIO
+.pio/
+.pioenvs/
+.piolibdeps/
+
+# Arduino and embedded build outputs
+*.eep
+*.map
+*.lst
+*.sym
+
+# Firmware build outputs
+*.elf
+*.hex
+*.bin
+
+# Allow final firmware files needed by Proteus or simulations
+!hardware-files/simulation/**/*.elf
+!hardware-files/simulation/**/*.hex
+!hardware-files/simulation/**/*.bin
+
+# Keep source and build configuration:
+!*.c
+!*.cpp
+!*.cc
+!*.cxx
+!*.h
+!*.hpp
+!*.ino
+!Makefile
+!CMakeLists.txt
+!platformio.ini
+
+# ============================================================
+# KICAD
+# ============================================================
+
+# KiCad backup folders
+*-backups/
+*-backup/
+rescue-backup/
+
+# KiCad automatic-save and backup files
+_autosave-*
+*_autosave-*
+*.kicad_sch-bak
+*.kicad_pcb-bak
+
+# KiCad lock and local preference files
+~*.lck
+*.lck
+*.kicad_prl
+
+# Generated KiCad cache
+fp-info-cache
+
+# Keep current KiCad project files
+!*.kicad_pro
+!*.kicad_sch
+!*.kicad_pcb
+!*.kicad_dru
+!*.kicad_wks
+!*.kicad_sym
+!*.kicad_mod
+
+# Keep KiCad footprint libraries
+!*.pretty/
+!*.pretty/**
+
+# Keep older KiCad project formats
+!*.pro
+!*.sch
+!*.brd
+!*.lib
+
+# Keep PCB manufacturing outputs where included
+!*.gbr
+!*.ger
+!*.drl
+!*.pos
+!*.net
+
+# ============================================================
+# PROTEUS DESIGN SUITE
+# ============================================================
+
+# Proteus backup and temporary files
+*.pdsbak
+*.workspace
+*.log
+*.tmp
+*.temp
+*.bak
+
+# Keep Proteus project and design files
+!*.pdsprj
+!*.dsn
+!*.lyt
+!*.sdf
+
+# Keep custom Proteus model and library files
+!*.mod
+!*.lib
+!*.LIB
+
+# ============================================================
+# MATLAB AND SIMULINK
+# ============================================================
+
+slprj/
+codegen/
+*.slxc
+*.asv
+*.m~
+*.autosave
+
+# Keep MATLAB and Simulink source files
+!*.m
+!*.mlx
+!*.mat
+!*.slx
+!*.mdl
+
+# ============================================================
+# CAD AND MECHANICAL DESIGN
+# ============================================================
+
+# Keep commonly used CAD exchange files when reasonably small
+!*.step
+!*.stp
+!*.stl
+!*.dxf
+!*.dwg
+!*.FCStd
+
+# ------------------------------------------------------------
+# Large AI models and generated data
+# ------------------------------------------------------------
+*.pt
+*.pth
+*.onnx
+*.h5
+*.hdf5
+*.npy
+*.npz
+
+# ------------------------------------------------------------
+# Databases generated during local development
+# ------------------------------------------------------------
+*.sqlite-journal
+*.db-journal
+
+# Keep database definitions and scripts
+!*.sql
+
+# ------------------------------------------------------------
+# Documentation and images remain tracked
+# ------------------------------------------------------------
+!*.md
+!*.txt
+!*.pdf
+!*.docx
+!*.pptx
+!*.csv
+!*.png
+!*.jpg
+!*.jpeg
+!*.svg
+!*.gif
